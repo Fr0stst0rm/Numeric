@@ -19,7 +19,7 @@ alive = True
 
 stellen = 12
 
-genauigkeit =  Decimal(Decimal(1)/Decimal(pow(10,stellen))) #Decimal.from_float(1E-12) # -> %
+precision =  Decimal(Decimal(1)/Decimal(pow(10,stellen))) #Decimal.from_float(1E-12) # -> %
 
 a = Decimal(1)
 b = Decimal(2)
@@ -44,7 +44,7 @@ while alive:
 	else:
 		a = x
 
-	if (Decimal(abs(f(result(a,b)) - y)))/y < genauigkeit:
+	if abs(f(result(a,b)) - y) < precision:
 		alive = False
 
 	loops += 1
