@@ -33,7 +33,7 @@ def f(x):
 def result(a,b):
 	return (Decimal(a)+Decimal(b))/Decimal(2)
 
-while alive:
+while (Decimal(abs(f(result(a,b)) - y)/y) > precision):
 
 	x = result(a,b)
 
@@ -44,11 +44,8 @@ while alive:
 	else:
 		a = x
 
-	if abs(f(result(a,b)) - y) < precision:
-		alive = False
-
 	loops += 1
-	print("res: %E" % (Decimal(result(a,b))-Decimal('1.7320508075688772935274463415058723669428052538103806280558069794519330169088000370811461867572485756')))
+	#print("res: %E" % (Decimal(result(a,b))-Decimal('1.7320508075688772935274463415058723669428052538103806280558069794519330169088000370811461867572485756')))
 
 print("\n")
 print("Loops: "  + str(loops))
