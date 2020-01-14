@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>60f5f85f-4987-4311-8e3e-b2f59b7a7bb7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Uebung_1.1.py</StartupFile>
+    <StartupFile>Uebung2\Uebung_2.3.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,12 +21,27 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Uebung_1.1.py">
+    <Compile Include="Uebung1\Uebung_1.1.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Uebung_1.3.py">
+    <Compile Include="Uebung1\Uebung_1.3.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Uebung2\Uebung_2.2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Uebung2\Uebung_2.3.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Uebung2\" />
+    <Folder Include="Uebung1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Uebung2\Uebung_2.1.py">
+      <SubType>Code</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
